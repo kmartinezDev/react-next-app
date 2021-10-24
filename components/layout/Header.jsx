@@ -17,7 +17,7 @@ const ContenedorHeader = styled.div `
 `
 
 const Logo = styled.p`
-    color: var(--naraja);
+    color: var(--naranja);
     font-size: 4rem;
     line-height: 0;
     font-weight:700;
@@ -27,7 +27,7 @@ const Logo = styled.p`
 
 const Header = () => {
 
-    const usuario = true; 
+    const usuario = false; 
 
     return (
         <header
@@ -74,12 +74,12 @@ const Header = () => {
                         </Fragment>
                     ) : (
                         <Fragment>
-                            <Link href="/">
+                            <Link href="/login">
                                 <Boton
                                     bgColor="true"
                                 >Login</Boton>
                             </Link>
-                            <Link href="/">
+                            <Link href="/crear-cuenta">
                                 <Boton>Crear Cuenta</Boton>
                             </Link>
                         </Fragment>
